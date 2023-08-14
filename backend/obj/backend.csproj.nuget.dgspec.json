@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj": {}
+    "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj": {
+    "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
+        "projectUniqueName": "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
+        "projectPath": "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\FRANCO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\obj\\",
+        "outputPath": "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FRANCO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -49,6 +49,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
