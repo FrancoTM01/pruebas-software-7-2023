@@ -15,7 +15,7 @@ namespace backend_unit_test
         public void Usuarios_Get_Verificar_NotNull()
         {
             var result = UsuariosServicios.ObtenerTodo<Usuarios>();
-            Assert.Null(result);
+            Assert.NotNull(result);
         }
     }
     

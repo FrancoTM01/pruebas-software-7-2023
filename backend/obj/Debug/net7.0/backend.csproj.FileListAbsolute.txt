@@ -78,6 +78,7 @@ C:/Users/FRANCO/Documents/GitHub/pruebas-software-7-2023/backend/bin/Debug/net7.
 /workspaces/pruebas-software-7-2023/backend/obj/Debug/net7.0/backend.csproj.CopyComplete
 /workspaces/pruebas-software-7-2023/backend/obj/Debug/net7.0/backend.genruntimeconfig.cache
 /workspaces/pruebas-software-7-2023/backend/obj/Debug/net7.0/ref/backend.dll
+<<<<<<< HEAD
 C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\bin\Debug\net7.0\appsettings.json
 C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\bin\Debug\net7.0\backend.exe
@@ -158,3 +159,5 @@ C:\Users\WIN10\Documents\GitHub\pruebas-software-7-2023\backend\obj\Debug\net7.0
 C:\Users\WIN10\Documents\GitHub\pruebas-software-7-2023\backend\obj\Debug\net7.0\backend.pdb
 C:\Users\WIN10\Documents\GitHub\pruebas-software-7-2023\backend\obj\Debug\net7.0\backend.genruntimeconfig.cache
 C:\Users\WIN10\Documents\GitHub\pruebas-software-7-2023\backend\obj\Debug\net7.0\ref\backend.dll
+=======
+>>>>>>> 8dbbc038335fb68bba383179ed11ae586aa57f33
