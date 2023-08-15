@@ -17,6 +17,31 @@ namespace backend_unit_test
             var result = UsuariosServicios.ObtenerTodo<Usuarios>();
             Assert.NotNull(result);
         }
+
+        [Fact]
+
+        public void Usuarios_GetById_VerificarItem()
+        {
+            var result = UsuariosServicios.ObtenerById<Usuarios>(1);
+            Assert.Equal(1, result.Id);
+        }
+        
+        [Fact]
+
+        public void Usuarios_Insertar()
+        {
+            Usuarios usuarioTemp = new()
+            {
+                NombreCompleto = "Nombre Test",
+                UserName = "UserName Test",
+                Password = "Password Test"
+            };
+            var result = UsuariosServicios.InsertUsuario(usuarioTemp);
+            Assert.Equal(1, result);
+        }
+
+
+
     }
     
 }
