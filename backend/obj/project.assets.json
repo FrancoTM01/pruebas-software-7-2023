@@ -960,19 +960,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FRANCO\\.nuget\\packages\\": {}
+    "C:\\Users\\WIN10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\FRANCO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\obj\\",
+      "projectPath": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FRANCO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

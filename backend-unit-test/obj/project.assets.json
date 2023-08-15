@@ -6462,19 +6462,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FRANCO\\.nuget\\packages\\": {}
+    "C:\\Users\\WIN10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend-unit-test\\backend-unit-test.csproj",
+      "projectUniqueName": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend-unit-test\\backend-unit-test.csproj",
       "projectName": "backend-unit-test",
-      "projectPath": "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend-unit-test\\backend-unit-test.csproj",
-      "packagesPath": "C:\\Users\\FRANCO\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend-unit-test\\obj\\",
+      "projectPath": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend-unit-test\\backend-unit-test.csproj",
+      "packagesPath": "C:\\Users\\WIN10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend-unit-test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FRANCO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WIN10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6488,8 +6488,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj": {
-              "projectPath": "c:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj"
+            "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj": {
+              "projectPath": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj"
             }
           }
         }
