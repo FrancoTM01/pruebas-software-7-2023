@@ -71,27 +71,5 @@ namespace backend.connection
             }
         }
 
-        // Metodo para obtener un listado de la base de datos pasandoles un parametro (Dapper)
-
-        // Modificando el metodo GetDataWithParameters para usar un procedimiento almacenado
-        public IEnumerable<T> SPGetDataWithParameters<T>(string storedProcedureName, DynamicParameters parameters)
-        {
-            using (var connection = new SqlConnection(ConnectionString))
-            {
-                connection.Open();
-                DefaultTypeMap.MatchNamesWithUnderscores = true;
-                return connection.Query<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure);
-            }
-        }
-
-        // Metodo para escribir en la base de datos utilizando procesos almacenados (Dapper)
-
-        public int SPSetData(string storedProcedureName, DynamicParameters parameters)
-        {
-            using var connection = new SqlConnection(ConnectionString);
-            connection.Open();
-            DefaultTypeMap.MatchNamesWithUnderscores = true;
-            return connection.Execute(storedProcedureName, parameters, commandType: CommandType.StoredProcedure);
-        }   
     }
 }
