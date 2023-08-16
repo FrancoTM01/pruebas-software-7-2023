@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "OLGDxKdwQ9ig61ybkToVzRL3cPaUqeJGn+6tqXpepuOw298d8EUoC4VA5e2nT0B/uiew/9+Jiubm25M0pz1WTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\WIN10\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
+=======
+  "dgSpecHash": "cmNkXKo29XHq4e5ZXs9zk4TllBjB3tP/GMcgpQc8i/DhNT34c5srWfb7MdPzgwOsDnryazr/w9v52LxzMhUbwg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FRANCO\\Documents\\GitHub\\pruebas-software-7-2023\\backend\\backend.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\WIN10\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\WIN10\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
