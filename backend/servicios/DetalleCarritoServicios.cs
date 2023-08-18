@@ -41,25 +41,21 @@ namespace backend.servicios
         public static int UpdateDetalleCarrito(DetalleCarrito detalleCarrito)
         {
             const string sql = "UPDATE [DETALLE_CARRITO] SET [CANTIDAD] = @cantidad, [ID_PRODUCTO] = @id_producto, [ID_CARRITO_COMPRA] = @id_carrito_compra WHERE [ID] = @id";
-            //const string storedProcedureName = "UpdateDetalleCarrito";
             var parameter = new DynamicParameters();
             parameter.Add("id", detalleCarrito.Id, DbType.Int32);
             parameter.Add("cantidad", detalleCarrito.Cantidad, DbType.Int32);
             parameter.Add("id_producto", detalleCarrito.IdProducto, DbType.Int32);
             parameter.Add("id_carrito_compra", detalleCarrito.IdCarritoCompra, DbType.Int32);
             var result = BDManager.GetInstance.SetData(sql, parameter);
-            //var result = BDManager.GetInstance.SPSetData(storedProcedureName, parameter);
             return result;
         }
 
         public static int DeleteDetalleCarrito(int id)
         {
             const string sql = "DELETE FROM [DETALLE_CARRITO] WHERE [ID] = @id";
-            //const string storedProcedureName = "DeleteDetalleCarrito";
             var parameter = new DynamicParameters();
             parameter.Add("id", id, DbType.Int32);
             var result = BDManager.GetInstance.SetData(sql, parameter);
-            //var result = BDManager.GetInstance.SPSetData(storedProcedureName, parameter);
             return result;
         }
 
