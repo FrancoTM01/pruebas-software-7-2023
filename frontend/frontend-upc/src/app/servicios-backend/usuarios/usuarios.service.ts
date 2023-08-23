@@ -3,7 +3,6 @@ import{HttpClient, HttpResponse} from '@angular/common/http'
 import { Observable, Observer } from 'rxjs';
 import { Usuarios } from 'src/app/entidades/usuarios';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -30,5 +29,4 @@ export class UsuariosService {
         { observe: 'response' })
       .pipe();
   }
-
 }
