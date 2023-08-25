@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Producto
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,14 +15,16 @@
 
   <ion-item>
     <ion-input id="nombre" type="text" placeholder="Ingrese el Nombre Producto" [(ngModel)]="nombre"></ion-input>
+<ion-select id="idCategoria" [(ngModel)]="idCategoria" *ngIf="listaCategoria.length > 0">
+  <ion-select-option *ngFor="let categoria of listaCategoria" [value]="categoria.ID_CATEGORIA">{{ categoria.nombre }}</ion-select-option>
+</ion-select>
+    
     <ion-button id="addProducto" (click)="addProducto()">Agregar Producto</ion-button>
   </ion-item>
   <br>
   <ion-list>
     <ion-item *ngFor="let item of listaProducto">
-      <b>nombreProducto</b>:{{item.nombre}};
+      <b>Producto</b>: {{ item.nombre }}, <b>Categoria</b>: {{ item.idCategoria }};
     </ion-item>
   </ion-list>
-  
-  
 </ion-content>

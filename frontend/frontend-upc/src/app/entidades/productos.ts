@@ -1,4 +1,6 @@
-export class Producto{
-    public nombre: string = "";
-
-  }
+export class Producto {
+  constructor(
+    public nombre: string,
+    public idCategoria: number,
+  ) {}
+}

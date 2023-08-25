@@ -45,10 +45,12 @@ export class Tab2Page {
     
 
   }
-  private AddCategoriaProductoFromBackend(nombre: string){
+  private AddCategoriaProductoFromBackend(nombre: string) {
+    var categoriaEntidad = new CategoriaProducto(0, nombre);
+ // private AddCategoriaProductoFromBackend(nombre: string){
 
-    var categoriaEntidad = new CategoriaProducto();
-    categoriaEntidad.nombre = nombre;
+ //     var categoriaEntidad = new CategoriaProducto();
+  //    categoriaEntidad.nombre = nombre;
 
 
     this.categoriaProductoService.AddCategoriaProducto(categoriaEntidad).subscribe({
