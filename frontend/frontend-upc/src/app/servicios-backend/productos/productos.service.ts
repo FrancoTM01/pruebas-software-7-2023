@@ -12,8 +12,9 @@ export class ProductosService {
   PATH_BACKEND = "http://localhost:" + "5192"
 
   URL_GET = this.PATH_BACKEND + "/api/Producto/GetAllProductos";
-  URL_ADD_PRODUCTO = this.PATH_BACKEND + "/api/Producto/AddProducto";
+  URL_ADD = this.PATH_BACKEND + "/api/Producto/AddProducto";
   URL_GET_CATEGORIA = this.PATH_BACKEND + "/api/CategoriaProducto/GetAllCategoriaProducto";
+  URL_ADD_CATEGORIA = this.PATH_BACKEND + "/api/CategoriaProducto/AddCategoriaProducto";
   constructor(private httpClient: HttpClient) {
   }
 
@@ -26,7 +27,7 @@ export class ProductosService {
 
   public AddProducto(entidad: Producto): Observable<HttpResponse<any>> {
     return this.httpClient
-      .post<any>(this.URL_ADD_PRODUCTO, entidad,
+      .post<any>(this.URL_ADD, entidad,
         { observe: 'response' })
       .pipe();
   }
@@ -37,6 +38,12 @@ export class ProductosService {
       .get<any>(this.URL_GET_CATEGORIA,
         { observe: 'response' })
     .pipe();
+  }
+  public AddCategoriaProducto(entidad: CategoriaProducto): Observable<HttpResponse<any>> {
+    return this.httpClient
+      .post<any>(this.URL_ADD_CATEGORIA, entidad,
+        { observe: 'response' })
+      .pipe();
   }
 
 

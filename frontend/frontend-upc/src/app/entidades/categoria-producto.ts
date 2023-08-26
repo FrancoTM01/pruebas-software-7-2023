@@ -1,9 +1,9 @@
 export class CategoriaProducto {
-  public ID_CATEGORIA: number;
-  public nombre: string;
+  id: number;
+  nombre: string;
 
-  constructor(idCategoria: number, nombre: string) {
-    this.ID_CATEGORIA = idCategoria;
+  constructor(id: number, nombre: string) {
+    this.id = id;
     this.nombre = nombre;
   }
 }

@@ -17,10 +17,10 @@ export class Tab3Page {
   public listaCategoria: CategoriaProducto[] = [];
 
   constructor(private productosService: ProductosService) {
-    this.getAllData();
+    this.GetAllFromBackend();
   }
 
-  private getAllData() {
+  private GetAllFromBackend() {
     this.productosService.GetProducto().subscribe({
       next: (response: HttpResponse<any>) => {
         this.listaProducto = response.body;
@@ -47,27 +47,30 @@ export class Tab3Page {
       alert("Ingresa el nombre y selecciona una categoría");
     }
   }
+  
 
   private AddProductoFromBackend(nombre: string, idCategoria: number) {
-    const productoEntidad = new Producto(nombre, idCategoria);
+    var productoEntidad = new Producto(nombre, idCategoria);
 
     this.productosService.AddProducto(productoEntidad).subscribe({
       next: (response: HttpResponse<any>) => {
-        if (response.body === 1) {
-          alert("Se agregó el PRODUCTO con éxito :)");
-          this.getAllData();
-          this.nombre = "";
-          this.idCategoria = null;
-        } else {
-          alert("Hubo un error al agregar el PRODUCTO :(");
-        }
+          console.log(response.body)//1
+          if(response.body == 1){
+              alert("Se agrego el PRODUCTO con exito :)");
+              this.GetAllFromBackend();//Se actualize el listado
+              this.nombre = "";
+              this.idCategoria = null;
+
+          }else{
+              alert("Al agregar PRODUCTO fallo exito :(");
+          }
       },
       error: (error: any) => {
-        console.log(error);
+          console.log(error);
       },
       complete: () => {
           console.log('complete - this.AddProducto()');
       },
-    });
+  });
   }
 }

@@ -16,7 +16,7 @@
   <ion-item>
     <ion-input id="nombre" type="text" placeholder="Ingrese el Nombre Producto" [(ngModel)]="nombre"></ion-input>
 <ion-select id="idCategoria" [(ngModel)]="idCategoria" *ngIf="listaCategoria.length > 0">
-  <ion-select-option *ngFor="let categoria of listaCategoria" [value]="categoria.ID_CATEGORIA">{{ categoria.nombre }}</ion-select-option>
+  <ion-select-option *ngFor="let categoria of listaCategoria" [value]="categoria.id">{{ categoria.nombre }}</ion-select-option>
 </ion-select>
     
     <ion-button id="addProducto" (click)="addProducto()">Agregar Producto</ion-button>
