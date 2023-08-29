@@ -57,9 +57,15 @@ namespace backend_unit_test
 
 
         [Fact]
-        public void Usuarios_Eliminar()
+        public void Usuarios_Delete_EliminacionExitosa()
         {
-            var result = UsuariosServicios.DeleteUsuarios(101);
+            // Arrange
+            int idUsuarioAEliminar = 122; // Reemplaza con el ID correcto a eliminar
+
+            // Act
+            int result = UsuariosServicios.DeleteUsuarios(idUsuarioAEliminar);
+
+            // Assert
             Assert.Equal(1, result);
         }
 
