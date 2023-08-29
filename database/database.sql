@@ -133,8 +133,49 @@ ALTER TABLE DETALLE_CARRITO
   FOREIGN KEY("ID_CARRITO_COMPRA")
   REFERENCES CARRITO_COMPRA("ID");
 
+--/////////////////////////CAJERA///////////////////////////////////////////
 
-  
+IF OBJECT_ID('CAJERA', 'U') IS NOT NULL 
+  DROP TABLE CAJERA; 
+GO
+
+CREATE TABLE CAJERA
+(
+  "ID"                          INT IDENTITY(1,1),
+  "NOMBRE_COMPLETO"             VARCHAR(100) NOT NULL,
+  "TURNO"                       VARCHAR(50) NOT NULL,
+  "NUMERO_CAJA"                 INT NOT NULL,
+  "USUARIO_REGISTRO"            VARCHAR(50) DEFAULT SYSTEM_USER NOT NULL,
+  "FECHA_REGISTRO"              DATETIME DEFAULT getdate() NOT NULL,
+  "ESTADO_REGISTRO"             INT DEFAULT 1 NOT NULL, 
+  CONSTRAINT CAJERA_PK          PRIMARY KEY (ID)
+);
+
+--/////////////////////////PAGO_DE_MATERIA///////////////////////////////////////////
+
+IF OBJECT_ID('PAGO_DE_MATERIA', 'U') IS NOT NULL 
+  DROP TABLE PAGO_DE_MATERIA; 
+GO
+
+CREATE TABLE PAGO_DE_MATERIA
+(
+  "ID"                          INT IDENTITY(1,1),
+  "ID_CAJERA"                   INT NOT NULL,
+  "ID_USUARIO"                  INT NOT NULL,
+  "FECHA_PAGO"                  DATETIME NOT NULL,
+  "MONTO"                       DECIMAL(10, 2) NOT NULL,
+  "MATERIA"                     VARCHAR(100) NOT NULL,
+  "USUARIO_REGISTRO"            VARCHAR(50) DEFAULT SYSTEM_USER NOT NULL,
+  "FECHA_REGISTRO"              DATETIME DEFAULT getdate() NOT NULL,
+  "ESTADO_REGISTRO"             INT DEFAULT 1 NOT NULL, 
+  CONSTRAINT PAGO_DE_MATERIA_PK  PRIMARY KEY (ID),
+  CONSTRAINT FK_PAGO_DE_MATERIA_TO_CAJERA FOREIGN KEY (ID_CAJERA) REFERENCES CAJERA(ID),
+  CONSTRAINT FK_PAGO_DE_MATERIA_TO_USUARIO FOREIGN KEY (ID_USUARIO) REFERENCES USUARIOS(ID)
+);
+
+
+
+
 
 /*
 
@@ -144,7 +185,8 @@ select * from CATEGORIA_PRODUCTO //Backend
 select * from PRODUCTO //Backend
 select * from CARRITO_COMPRA //Backend
 select * from DETALLE_CARRITO
-
+select * from CAJERA //Backend
+select * from PAGO_DE_MATERIA //Backend
 
 
 
