@@ -22,7 +22,7 @@ namespace backend.Controllers
         }
 
         [HttpGet]
-        [Route("GetAllCajeras")]
+        [Route("GetAllCajeras2")]
         public IActionResult GetAllCajeras()
         {
             try
@@ -37,7 +37,7 @@ namespace backend.Controllers
         }
 
         [HttpGet]
-        [Route("GetCajeraById")]
+        [Route("GetCajeraById2")]
         public IActionResult GetCajeraById([FromQuery] int id)
         {
             try
