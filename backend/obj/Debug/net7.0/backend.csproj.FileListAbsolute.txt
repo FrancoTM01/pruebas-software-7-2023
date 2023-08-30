@@ -161,3 +161,5 @@ C:\Users\WIN10\Documents\GitHub\pruebas-software-7-2023\backend\obj\Debug\net7.0
 C:\Users\WIN10\Documents\GitHub\pruebas-software-7-2023\backend\obj\Debug\net7.0\ref\backend.dll
 =======
 >>>>>>> 8dbbc038335fb68bba383179ed11ae586aa57f33
+C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\obj\Debug\net7.0\backend.xml
+C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\bin\Debug\net7.0\backend.xml

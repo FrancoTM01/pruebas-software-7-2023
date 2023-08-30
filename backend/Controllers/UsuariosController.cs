@@ -36,7 +36,11 @@ public class UsuariosController : ControllerBase
         }
     }
 
-
+    /// <summary>
+    /// Obtener un usuario por su id
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     [HttpGet]
     [Route("GetUsuariosById")]
     public IActionResult GetUsuariosById([FromQuery] int id)
