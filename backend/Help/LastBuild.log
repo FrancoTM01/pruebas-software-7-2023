@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2023.7.8.0" projectFile="C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Documento-backend.shfbproj" started="29/8/2023 20:50:38">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2023.7.8.0" projectFile="C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Documento-backend.shfbproj" started="30/8/2023 06:18:21">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -29,18 +29,18 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, Ingl&#233;s (Estados Unidos))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0521
+</plugIn>    Last step completed in 00:00:00,0290
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0055
+    Last step completed in 00:00:00,0000
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-94266210-8c45-49fb-a66e-1e2564489376.proj]
-Compilaci&#162;n iniciada a las 29/8/2023 20:50:39.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-b4f043ae-9535-43b3-9921-f2d4d4c36c40.proj]
+Compilaci&#162;n iniciada a las 30/8/2023 06:18:22.
 
-Proyecto &quot;C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-94266210-8c45-49fb-a66e-1e2564489376.proj&quot; en nodo 1 (destinos predeterminados).
+Proyecto &quot;C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-b4f043ae-9535-43b3-9921-f2d4d4c36c40.proj&quot; en nodo 1 (destinos predeterminados).
 PrepareForBuild:
   Creando directorio &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -48,60 +48,60 @@ GenerateRefInfo:
   &#184; Microsoft Corporation. All rights reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 1 assemblies for reflection and 1 dependency assemblies.
-MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.AspNetCore.Mvc.Core (Microsoft.AspNetCore.Mvc.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-94266210-8c45-49fb-a66e-1e2564489376.proj]
-MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.AspNetCore.Cors (Microsoft.AspNetCore.Cors, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-94266210-8c45-49fb-a66e-1e2564489376.proj]
-MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.Extensions.Configuration.Abstractions (Microsoft.Extensions.Configuration.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-94266210-8c45-49fb-a66e-1e2564489376.proj]
-MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.AspNetCore.Mvc.Abstractions (Microsoft.AspNetCore.Mvc.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-94266210-8c45-49fb-a66e-1e2564489376.proj]
+MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.AspNetCore.Mvc.Core (Microsoft.AspNetCore.Mvc.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-b4f043ae-9535-43b3-9921-f2d4d4c36c40.proj]
+MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.AspNetCore.Cors (Microsoft.AspNetCore.Cors, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-b4f043ae-9535-43b3-9921-f2d4d4c36c40.proj]
+MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.Extensions.Configuration.Abstractions (Microsoft.Extensions.Configuration.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-b4f043ae-9535-43b3-9921-f2d4d4c36c40.proj]
+MRefBuilder : warning : Ignoring unresolved assembly reference: Microsoft.AspNetCore.Mvc.Abstractions (Microsoft.AspNetCore.Mvc.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60) required by backend [C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-b4f043ae-9535-43b3-9921-f2d4d4c36c40.proj]
   Wrote information on 4 namespaces, 23 types, and 120 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Compilaci&#162;n del proyecto terminada &quot;C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-94266210-8c45-49fb-a66e-1e2564489376.proj&quot; (destinos predeterminados).
-    Last step completed in 00:00:01,4202
+Compilaci&#162;n del proyecto terminada &quot;C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\GenerateRefInfo-b4f043ae-9535-43b3-9921-f2d4d4c36c40.proj&quot; (destinos predeterminados).
+    Last step completed in 00:00:01,4339
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00,0831
+    Last step completed in 00:00:00,0576
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00,0498
+    Last step completed in 00:00:00,0568
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00,0380
+    Last step completed in 00:00:00,0482
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00,0235
+    Last step completed in 00:00:00,0320
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00,0025
+    Last step completed in 00:00:00,0101
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0000
+    Last step completed in 00:00:00,0023
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,0531
+    Last step completed in 00:00:00,0518
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00,4098
+    Last step completed in 00:00:00,4034
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0131
+    Last step completed in 00:00:00,0084
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\BuildAssembler.config
   Updating reference topic configurations.
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00,0657
+    Last step completed in 00:00:00,0697
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -237,17 +237,13 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.ProductoContr
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.ProductoController.UpdateProducto(backend.entidades.Producto)] Missing &lt;param name=&quot;producto&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [T:backend.Controllers.UsuariosController] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)] Missing &lt;param name=&quot;configuration&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.AddUsuario(backend.entidades.Usuarios)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.AddUsuario(backend.entidades.Usuarios)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.AddUsuario(backend.entidades.Usuarios)] Missing &lt;param name=&quot;usuarios&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.DeleteUsuario(System.Int32)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.DeleteUsuario(System.Int32)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.DeleteUsuario(System.Int32)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.GetAllUsuarios] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.GetAllUsuarios] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.GetUsuariosById(System.Int32)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.GetUsuariosById(System.Int32)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.UpdateUsuario(backend.entidades.Usuarios)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.UpdateUsuario(backend.entidades.Usuarios)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.Controllers.UsuariosController.UpdateUsuario(backend.entidades.Usuarios)] Missing &lt;param name=&quot;usuarios&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:backend.entidades] Missing &lt;summary&gt; documentation
@@ -409,10 +405,10 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:backend.servicios.UsuariosServici
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.servicios.UsuariosServicios.UpdateUsuarios(backend.entidades.Usuarios)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:backend.servicios.UsuariosServicios.UpdateUsuarios(backend.entidades.Usuarios)] Missing &lt;param name=&quot;usuarios&quot;/&gt; documentation
 Processed 179 topic(s)
-301 warning(s)
+297 warning(s)
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
-    Last step completed in 00:00:03,6006
+    Last step completed in 00:00:02,6775
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -424,7 +420,7 @@ Saving HTML Help 1 table of contents to C:\Users\FRANCO\Documents\GitHub\pruebas
 Processing website files in C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\Output\Website
 Processed 179 HTML files.  Sorting keywords and generating See Also indices.
 Saving website table of contents to C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\\WebTOC.xml
-    Last step completed in 00:00:01,7581
+    Last step completed in 00:00:01,6193
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -621,11 +617,11 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\Web\scripts\clipboard.min.js -&gt; C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\Web\scripts\jquery-3.5.1.min.js -&gt; C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\Output\Website\scripts\jquery-3.5.1.min.js
-    Last step completed in 00:00:00,6887
+    Last step completed in 00:00:00,7723
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
-    Last step completed in 00:00:00,0196
+    Last step completed in 00:00:00,0167
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Compiling HTML Help 1 file...
@@ -645,7 +641,7 @@ Compiling HTML Help 1 file...
   
   181	Topics
   
-  1,894	Local links
+  1,893	Local links
   
   0	Internet links
   
@@ -655,15 +651,15 @@ Compiling HTML Help 1 file...
   
   
   
-  Created c:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\Output\HtmlHelp1\Documentation.chm, 217,817 bytes
+  Created c:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Working\Output\HtmlHelp1\Documentation.chm, 218,347 bytes
   
-  Compression decreased file by 1,243,573 bytes.
+  Compression decreased file by 1,242,816 bytes.
   
-    Last step completed in 00:00:03,8341
+    Last step completed in 00:00:02,4538
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Executing informational Generate Help Project build step for plug-ins (not used for MS Help Viewer)
-    Last step completed in 00:00:00,0000
+    Last step completed in 00:00:00,0011
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Generating MS Help Viewer file...
@@ -671,29 +667,29 @@ Generating MS Help Viewer file...
 
   Compressing help content files into C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Documentation.mshc
   Finished saving C:\Users\FRANCO\Documents\GitHub\pruebas-software-7-2023\backend\Help\Documentation.mshc
-  Compressed 5 folders, 239 files.  Reduced size by 909.595 bytes (71%).
-    Last step completed in 00:00:00,4303
+  Compressed 5 folders, 239 files.  Reduced size by 909.240 bytes (71%).
+    Last step completed in 00:00:00,3828
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:00,2927
+</plugIn>    Last step completed in 00:00:00,2412
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 327 files for the website content
-    Last step completed in 00:00:00,5139
+    Last step completed in 00:00:00,4656
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00,1759
+    Last step completed in 00:00:00,3392
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 29/8/2023 20:50:52.  Total time: 00:00:14,1574
+Build completed successfully at 30/8/2023 06:18:33.  Total time: 00:00:11,6547
 
 </buildStep>
 </shfbBuild>

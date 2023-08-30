@@ -4,9 +4,18 @@ using backend.entidades;
 using Dapper;
 
 namespace backend.servicios
+
 {
+/// <summary>
+/// Clase Usuario Servicios
+/// </summary>
     public static class UsuariosServicios
     {
+        /// <summary>
+        /// Obtener todos los Usurios
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public static IEnumerable<T> ObtenerTodo<T>()
         {
             const string sql = "select top 5 * from usuarios order by id desc";

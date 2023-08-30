@@ -4,11 +4,246 @@
         <name>backend</name>
     </assembly>
     <members>
+        <member name="F:backend.Controllers.UsuariosController._configuration">
+            <summary>
+            Clase usuario controller
+            </summary>
+        </member>
+        <member name="M:backend.Controllers.UsuariosController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor usuarios
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:backend.Controllers.UsuariosController.GetAllUsuarios">
+            <summary>
+            Obtener todo
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:backend.Controllers.UsuariosController.GetUsuariosById(System.Int32)">
             <summary>
             Obtener un usuario por su id
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:backend.Controllers.UsuariosController.AddUsuario(backend.entidades.Usuarios)">
+            <summary>
+            Insertar usuario nuevo
+            </summary>
+            <param name="usuarios"></param>
+            <returns></returns>
+        </member>
+        <member name="M:backend.Controllers.UsuariosController.UpdateUsuario(backend.entidades.Usuarios)">
+            <summary>
+            Actualizar usuario insertado
+            </summary>
+            <param name="usuarios"></param>
+            <returns></returns>
+        </member>
+        <member name="M:backend.Controllers.UsuariosController.DeleteUsuario(System.Int32)">
+            <summary>
+            Eliminar usuario insertado por su id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:backend.entidades.Cajera">
+            <summary>
+            Clase Cajera
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Cajera.Id">
+            <summary>
+            Id de Cajera
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Cajera.NombreCompleto">
+            <summary>
+            Nombre Completo de Cajera
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Cajera.Turno">
+            <summary>
+            Turno de Cajera
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Cajera.NumeroCaja">
+            <summary>
+            Numero de Caja de Cajera
+            </summary>
+        </member>
+        <member name="T:backend.entidades.CarritoCompra">
+            <summary>
+            Clase Carrito Compra
+            </summary>
+        </member>
+        <member name="P:backend.entidades.CarritoCompra.Id">
+            <summary>
+            Id de Carrito Compra
+            </summary>
+        </member>
+        <member name="P:backend.entidades.CarritoCompra.Fecha">
+            <summary>
+            Fecha de Carrito Compra
+            </summary>
+        </member>
+        <member name="P:backend.entidades.CarritoCompra.IdUsuario">
+            <summary>
+            Id de Usuario de Carrito Compra
+            </summary>
+        </member>
+        <member name="T:backend.entidades.CategoriaProducto">
+            <summary>
+            Clase Categoria Producto
+            </summary>
+        </member>
+        <member name="P:backend.entidades.CategoriaProducto.Id">
+            <summary>
+            Id de Categeoria Producto
+            </summary>
+        </member>
+        <member name="P:backend.entidades.CategoriaProducto.Nombre">
+            <summary>
+            Nombre de Categoria Producto
+            </summary>
+        </member>
+        <member name="T:backend.entidades.Common">
+            <summary>
+            Clase Common
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Common.UsuarioRegistro">
+            <summary>
+            Usuario Registro de clase Common
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Common.FechaRegistro">
+            <summary>
+            Fecha Registro de clase Common
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Common.EstadoRegistro">
+            <summary>
+            Estado Registro de clase Common
+            </summary>
+        </member>
+        <member name="T:backend.entidades.DetalleCarrito">
+            <summary>
+            Clase Detalle Carrito
+            </summary>
+        </member>
+        <member name="P:backend.entidades.DetalleCarrito.Id">
+            <summary>
+            Id de Detalle Carrito
+            </summary>
+        </member>
+        <member name="P:backend.entidades.DetalleCarrito.Cantidad">
+            <summary>
+            Cantidad de Detalle Carrito
+            </summary>
+        </member>
+        <member name="P:backend.entidades.DetalleCarrito.IdProducto">
+            <summary>
+            Id de Producto en Detalle Carrito
+            </summary>
+        </member>
+        <member name="P:backend.entidades.DetalleCarrito.IdCarritoCompra">
+            <summary>
+            Id de Carrito Compra en Detalle Carrito
+            </summary>
+        </member>
+        <member name="T:backend.entidades.PagoDeMateria">
+            <summary>
+            Clase Pago de Materia
+            </summary>
+        </member>
+        <member name="P:backend.entidades.PagoDeMateria.Id">
+            <summary>
+            Id de Pago de Materia
+            </summary>
+        </member>
+        <member name="P:backend.entidades.PagoDeMateria.IdCajera">
+            <summary>
+            Id de Cajera en Pago de Materia
+            </summary>
+        </member>
+        <member name="P:backend.entidades.PagoDeMateria.IdUsuario">
+            <summary>
+            Id de Usuario en Pago de Materia
+            </summary>
+        </member>
+        <member name="P:backend.entidades.PagoDeMateria.FechaPago">
+            <summary>
+            Fecha de pago en Pago de Materia
+            </summary>
+        </member>
+        <member name="P:backend.entidades.PagoDeMateria.Monto">
+            <summary>
+            Monto en Pago de Materia
+            </summary>
+        </member>
+        <member name="P:backend.entidades.PagoDeMateria.Materia">
+            <summary>
+            Materia en Pago de Materia
+            </summary>
+        </member>
+        <member name="T:backend.entidades.Producto">
+            <summary>
+            Producto clase
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Producto.Id">
+            <summary>
+            Id de Producto
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Producto.Nombre">
+            <summary>
+            Nombre de producto
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Producto.IdCategoria">
+            <summary>
+            Ide categeoria de producto
+            </summary>
+        </member>
+        <member name="T:backend.entidades.Usuarios">
+            <summary>
+            Usuarios
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Usuarios.Id">
+            <summary>
+            id de usuario
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Usuarios.NombreCompleto">
+            <summary>
+            Nombre completo de usuario
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Usuarios.UserName">
+            <summary>
+            Nombre de usuario
+            </summary>
+        </member>
+        <member name="P:backend.entidades.Usuarios.Password">
+            <summary>
+            Contraseña de usuario
+            </summary>
+        </member>
+        <member name="T:backend.servicios.UsuariosServicios">
+            <summary>
+            Clase Usuario Servicios
+            </summary>
+        </member>
+        <member name="M:backend.servicios.UsuariosServicios.ObtenerTodo``1">
+            <summary>
+            Obtener todos los Usurios
+            </summary>
+            <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
     </members>

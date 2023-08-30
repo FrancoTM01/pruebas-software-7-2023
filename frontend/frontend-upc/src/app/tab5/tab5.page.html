@@ -1,13 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>tab5</ion-title>
+    <ion-title>
+      Cajera
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">tab5</ion-title>
+      <ion-title size="large">Cajera</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-item>
+    <ion-input id="nombreCompleto" type="text" placeholder="Ingrese el Nombre Completo" [(ngModel)]="nombreCompleto"></ion-input>
+    <ion-input id="turno" type="text" placeholder="Ingrese el Turno" [(ngModel)]="turno"></ion-input>
+    <ion-input id="numeroCaja" type="number" placeholder="Ingrese el Número de Caja" [(ngModel)]="numeroCaja"></ion-input>
+    <ion-button id="addCajera" (click)="addCajera()">Agregar Cajera</ion-button>
+  </ion-item>
+  <br>
+  <ion-list>
+    <ion-item *ngFor="let item of listaCajera">
+      <b>Nombre Completo</b>: {{ item.nombreCompleto }}, <b>Turno</b>: {{ item.turno }}, <b>Número de Caja</b>: {{ item.numeroCaja }};
+    </ion-item>
+  </ion-list>
 </ion-content>
