@@ -17,12 +17,24 @@
     <ion-input id="nombreCompleto" type="text" placeholder="Ingrese el Nombre Completo" [(ngModel)]="nombreCompleto"></ion-input>
     <ion-input id="turno" type="text" placeholder="Ingrese el Turno" [(ngModel)]="turno"></ion-input>
     <ion-input id="numeroCaja" type="number" placeholder="Ingrese el Número de Caja" [(ngModel)]="numeroCaja"></ion-input>
+    
     <ion-button id="addCajera" (click)="addCajera()">Agregar Cajera</ion-button>
   </ion-item>
   <br>
   <ion-list>
-    <ion-item *ngFor="let item of listaCajera">
-      <b>Nombre Completo</b>: {{ item.nombreCompleto }}, <b>Turno</b>: {{ item.turno }}, <b>Número de Caja</b>: {{ item.numeroCaja }};
+    <ion-item *ngFor="let cajera of listaCajeras">
+      <b>Nombre Completo</b>: {{ cajera.nombreCompleto }}, <b>Turno</b>: {{ cajera.turno }}, <b>Número de Caja</b>: {{ cajera.numeroCaja }};
+      <ion-button (click)="obtenerCajeraPorId(cajera.id)">Obtener por ID</ion-button>
+      <ion-button (click)="editarCajera(cajera)">Modificar</ion-button>
+      <ion-button (click)="eliminarCajera(cajera.id)">Eliminar</ion-button>
     </ion-item>
   </ion-list>
+  <ion-item *ngIf="cajeraSeleccionada">
+    <ion-input id="nombreCompleto" type="text" placeholder="Nombre Completo" [(ngModel)]="cajeraSeleccionada.nombreCompleto"></ion-input>
+    <ion-input id="turno" type="text" placeholder="Turno" [(ngModel)]="cajeraSeleccionada.turno"></ion-input>
+    <ion-input id="numeroCaja" type="number" placeholder="Número de Caja" [(ngModel)]="cajeraSeleccionada.numeroCaja"></ion-input>
+    
+    <ion-button id="modificarCajera" (click)="guardarModificacionCajera()">Guardar Modificación</ion-button>
+    <ion-button id="cancelarModificacion" (click)="cancelarModificacion()">Cancelar</ion-button>
+  </ion-item>
 </ion-content>
