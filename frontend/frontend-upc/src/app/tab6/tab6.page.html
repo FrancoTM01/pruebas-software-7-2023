@@ -26,7 +26,7 @@
   <ion-list>
     <ion-item *ngFor="let pago of listaPagosMateria">
       <b>ID Cajera</b>: {{ pago.idCajera }}, <b>ID Usuario</b>: {{ pago.idUsuario }}, <b>Fecha de Pago</b>: {{ pago.fechaPago | date }}, <b>Monto</b>: {{ pago.monto | currency }}, <b>Materia</b>: {{ pago.materia }};
-      <ion-button (click)="obtenerPagoMateriaPorId(pago.idCajera)">Obtener por ID</ion-button>
+      <ion-button (click)="obtenerPagoMateriaPorId(pago.id)">Obtener por ID</ion-button>
       <ion-button (click)="editarPagoMateria(pago)">Modificar</ion-button>
       <ion-button (click)="eliminarPagoMateria(pago.idCajera)">Eliminar</ion-button>
     </ion-item>
@@ -34,7 +34,7 @@
   <ion-item *ngIf="pagoMateriaSeleccionado">
     <ion-input id="idCajera" type="number" placeholder="ID Cajera" [(ngModel)]="pagoMateriaSeleccionado.idCajera"></ion-input>
     <ion-input id="idUsuario" type="number" placeholder="ID Usuario" [(ngModel)]="pagoMateriaSeleccionado.idUsuario"></ion-input>
-    <ion-input id="fechaPago" type="date" placeholder="Fecha de Pago" [(ngModel)]="pagoMateriaSeleccionado.fechaPago"></ion-input>
+    <ion-input id="fechaPago" type="text" placeholder="Fecha de Pago" [(ngModel)]="pagoMateriaSeleccionado.fechaPago"></ion-input>
     <ion-input id="monto" type="number" step="0.01" placeholder="Monto" [(ngModel)]="pagoMateriaSeleccionado.monto"></ion-input>
     <ion-input id="materia" type="text" placeholder="Materia" [(ngModel)]="pagoMateriaSeleccionado.materia"></ion-input>
     

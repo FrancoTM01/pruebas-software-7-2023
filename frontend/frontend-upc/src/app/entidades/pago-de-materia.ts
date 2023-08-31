@@ -1,24 +1,25 @@
 export class PagoDeMateria {
+  id: number;
+  idCajera: number;
+  idUsuario: number;
+  fechaPago: Date;
+  monto: number;
+  materia: string;
 
-    idCajera: number;
-    idUsuario: number;
-    fechaPago: Date;
-    monto: number;
-    materia: string;
-  
-    constructor(
+  constructor(
+    id: number,
+    idCajera: number,
+    idUsuario: number,
+    fechaPago: Date,
+    monto: number,
+    materia: string
+  ) {
 
-      idCajera: number,
-      idUsuario: number,
-      fechaPago: Date,
-      monto: number,
-      materia: string
-    ) {
-
-      this.idCajera = idCajera;
-      this.idUsuario = idUsuario;
-      this.fechaPago = fechaPago;
-      this.monto = monto;
-      this.materia = materia;
-    }
+    this.id = id;
+    this.idCajera = idCajera;
+    this.idUsuario = idUsuario;
+    this.fechaPago = fechaPago;
+    this.monto = monto;
+    this.materia = materia;
   }
+}

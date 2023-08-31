@@ -1,6 +1,6 @@
 import { HttpClient, HttpParams, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, identity } from 'rxjs';
 import { PagoDeMateria } from 'src/app/entidades/pago-de-materia';
 
 @Injectable({
@@ -25,8 +25,12 @@ export class PagoDeMateriaService {
       .pipe();
   }
   public GetById(id: number): Observable<HttpResponse<any>> {
+
+    console.log(id)
+
     var parametros = new HttpParams()
     parametros = parametros.set('id',id)
+
     return this.httpClient
       .get<any>(this.URL_GET_BY_ID,
         { params: parametros, observe: 'response' })

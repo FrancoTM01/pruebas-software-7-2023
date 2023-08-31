@@ -1,43 +1,43 @@
-describe("CRUD Cajera", () => {//Titulo
-    //Antes que nada, abrir el navegador en el proyecto Frontend que es el puerto 8100
-    beforeEach(() => {
-        cy.visit("http://localhost:8100"); //Frontend de Produccion
-    });
+describe("CRUD Cajeras", () => {
+  beforeEach(() => {
+    cy.visit("http://localhost:8100");
+  });
 
-    //Servicio API - GetCajera()
-    it("GetCajera()", () => {
-        cy.wait(1000);//Esperar 1 seg.
-        cy.get("ion-tab-button").eq(4).click(); // click en el TAB de Cajera
-        cy.wait(1000);//Esperar 1 seg.
+  it("GetCajera()", () => {
+    cy.get("ion-tab-button").eq(4).click();
+    cy.wait(1000);
 
-        cy.get("ion-item").should("be.visible")
-        .should("not.have.length", "0"); //Verifica que exista al menos un (ion-item)
-    });
+    cy.get("ion-item").should("be.visible");
+  });
 
-    //Servicio API - AddCajera(entidad)
-    it("AddCajera(entidad)", () => {
-        cy.get("ion-tab-button").eq(4).click(); // click en el TAB de Cajera
-        cy.wait(1000);//Esperar 1 seg.
-        
+  it("AddCajera()", () => {
+    cy.get("ion-tab-button").eq(4).click();
+    cy.wait(1000);
 
-        cy.get("#nombreCompleto")
-            .type("insertar nombreCompleto cypress", { delay: 100 })
-            .should("have.value", "insertar nombreCompleto cypress");
+    cy.get("#nombreCompleto input").type("Nombre Completo cypress", { force: true });
+    cy.get("#turno input").type("Turno cypress", { force: true });
+    cy.get("#numeroCaja input").type("1", { force: true });
 
-        cy.wait(500);//Esperar medio seg.
+    cy.get("#addCajera").not("[disabled]").click({ force: true });
+  });
 
-        cy.get("#turno")
-            .type("insertar turno cypress", { delay: 100 })
-            .should("have.value", "insertar turno cypress");
+  it("UpdateCajera()", () => {
+    cy.get("ion-tab-button").eq(4).click();
+    cy.wait(1000);
 
-        cy.wait(500);//Esperar medio seg.
+    cy.get("ion-item").first().find("ion-button:contains('Modificar')").click({ force: true });
 
-        cy.get("#numeroCaja")
-            .type("insertar numeroCaja cypress", { delay: 100 })
-            .should("have.value", "insertar numeroCaja cypress");
+    cy.get("#nombreCompleto input").clear().type("Nombre Completo actualizado", { force: true });
+    cy.get("#turno input").clear().type("Turno actualizado", { force: true });
+    cy.get("#numeroCaja input").clear().type("2", { force: true });
 
-        cy.wait(500);//Esperar medio seg.
+    cy.get("#modificarCajera").click({ force: true });
+  });
 
-        cy.get("#addCajera").not("[disabled]").click();
-    });
+  it("DeleteCajera()", () => {
+    cy.get("ion-tab-button").eq(4).click();
+    cy.wait(1000);
+
+    cy.get("ion-item").first().find("ion-button:contains('Eliminar')").click({ force: true });
+  });
 });

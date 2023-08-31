@@ -60,7 +60,7 @@ namespace backend_unit_test
         public void Usuarios_Delete_EliminacionExitosa()
         {
             // Arrange
-            int idUsuarioAEliminar = 122; // Reemplaza con el ID correcto a eliminar
+            int idUsuarioAEliminar = 125; // Reemplaza con el ID correcto a eliminar
 
             // Act
             int result = UsuariosServicios.DeleteUsuarios(idUsuarioAEliminar);

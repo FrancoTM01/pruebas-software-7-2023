@@ -21,5 +21,7 @@ namespace backend.entidades
         /// Numero de Caja de Cajera
         /// </summary>
         public int NumeroCaja { get; set; }
+
+
     }
 }

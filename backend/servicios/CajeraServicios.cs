@@ -62,5 +62,20 @@ namespace backend.servicios
             var result = BDManager.GetInstance.SetData(sql, parameters);
             return result;
         }
+
+        public static IEnumerable<object> InsertarCajera(Cajera cajeraTemp)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static int ActualizarCajera(Cajera cajera)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static int EliminarCajera(int idCajeraAEliminar)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

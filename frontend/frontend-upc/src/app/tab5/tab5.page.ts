@@ -50,7 +50,7 @@ export class Tab5Page implements OnInit {
   obtenerCajeraPorId(id: number) {
     this.cajeraService.GetById(id).subscribe(
       response => {
-        this.cajeraSeleccionada = response.body; // Almacena la cajera para editar/modificar
+        this.cajeraSeleccionada = response.body; // Almacena la cajera para editar/modificar, ES AQUI?
       },
       error => {
         console.error('Error al obtener la cajera por ID:', error);

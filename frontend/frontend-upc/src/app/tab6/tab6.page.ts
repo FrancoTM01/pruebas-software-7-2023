@@ -40,7 +40,7 @@ export class Tab6Page {
     );
   }
   addPagoMateria() {
-    const nuevoPago: PagoDeMateria = new PagoDeMateria(
+    const nuevoPago: PagoDeMateria = new PagoDeMateria(0,
       this.idCajera!,
       this.idUsuario!,
       new Date(this.fechaPago),
