@@ -28,7 +28,6 @@ export class CajeraService {
   public GetById(id: number): Observable<HttpResponse<any>> {
     var parametros = new HttpParams()
     parametros = parametros.set('id',id)
-   // const params = { id: id.toString() };
     return this.httpClient
       .get<any>(this.URL_GET_BY_ID,
         { params: parametros, observe: 'response' })

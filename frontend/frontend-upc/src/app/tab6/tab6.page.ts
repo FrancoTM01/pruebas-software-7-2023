@@ -14,8 +14,8 @@ export class Tab6Page {
   fechaPago: string = '';
   monto: number | null = null;
   materia: string = '';
-  pagoMateriaSeleccionado: PagoDeMateria | null = null;
   listaPagosMateria: PagoDeMateria[] = [];
+  pagoMateriaSeleccionado: PagoDeMateria | null = null;
 
 
   constructor(private pagoDeMateriaService: PagoDeMateriaService) {}
@@ -24,58 +24,20 @@ export class Tab6Page {
     this.obtenerPagosDeMateria();
   }
 
+  buscarYEditarPagoMateria(id: number) {
+    this.obtenerPagoMateriaPorId(id, );
+    this.editarPagoMateria(this.pagoMateriaSeleccionado!);
+  }
+
   obtenerPagosDeMateria() {
     this.pagoDeMateriaService.GetAll().subscribe(
-      (response) => {
-        // Si 'listaPagosMateria' existe, asigna los datos
-        // Ejemplo: this.listaPagosMateria = response.body;
+      response => {
+        this.listaPagosMateria = response.body;
       },
-      (error) => {
+      error => {
         console.error('Error al obtener los pagos de materia:', error);
       }
     );
-  }
-
-  obtenerPagoMateriaPorId(id: number) {
-    this.pagoDeMateriaService.GetById(id).subscribe(
-      (response) => {
-        this.pagoMateriaSeleccionado = response.body;
-      },
-      (error) => {
-        console.error('Error al obtener el pago de materia por ID:', error);
-      }
-    );
-  }
-
-  editarPagoMateria(pago: PagoDeMateria) {
-    this.pagoMateriaSeleccionado = { ...pago };
-  }
-
-  guardarModificacionPagoMateria() {
-    this.pagoDeMateriaService.Update(this.pagoMateriaSeleccionado!).subscribe(
-      (response) => {
-        this.obtenerPagosDeMateria();
-        this.cancelarModificacion();
-      },
-      (error) => {
-        console.error('Error al modificar el pago de materia:', error);
-      }
-    );
-  }
-
-  eliminarPagoMateria(id: number) {
-    this.pagoDeMateriaService.Delete(id).subscribe(
-      (response) => {
-        this.obtenerPagosDeMateria();
-      },
-      (error) => {
-        console.error('Error al eliminar el pago de materia:', error);
-      }
-    );
-  }
-
-  cancelarModificacion() {
-    this.pagoMateriaSeleccionado = null;
   }
   addPagoMateria() {
     const nuevoPago: PagoDeMateria = new PagoDeMateria(
@@ -85,20 +47,63 @@ export class Tab6Page {
       this.monto!,
       this.materia
     );
-  
     this.pagoDeMateriaService.Add(nuevoPago).subscribe(
-      (response) => {
-        // Manejar la respuesta en caso de éxito
+      response => {
+        
+        this.obtenerPagosDeMateria(); 
         console.log(response);
         alert('Pago de materia realizado con éxito.');
-
       },
-      (error) => {
-        // Manejar el error
+      error => {
         console.error(error);
       }
     );
   }
+  obtenerPagoMateriaPorId(id: number) {
+    this.pagoDeMateriaService.GetById(id).subscribe(
+      response => {
+      this.pagoMateriaSeleccionado = response.body;
+      console.log(response.body)
+      },
+      
+      error => {
+        console.error('Error al obtener los últimos 5 pagos de materia:', error);
+      }
+    );
+  }
+  editarPagoMateria(pago: PagoDeMateria) {
+    this.pagoMateriaSeleccionado = { ...pago };
+  }
+
+  guardarModificacionPagoMateria() {
+    this.pagoDeMateriaService.Update(this.pagoMateriaSeleccionado!).subscribe(
+      response => {
+        alert('Pago de materia modificado con éxito.');
+        this.obtenerPagosDeMateria();
+        this.cancelarModificacion();
+      },
+      error => {
+        console.error('Error al modificar el pago de materia:', error);
+      }
+    );
+  }
+
+  eliminarPagoMateria(id: number) {
+    this.pagoDeMateriaService.Delete(id).subscribe(
+      response => {
+        alert('Pago de materia eliminado con éxito.');
+        this.obtenerPagosDeMateria();
+      },
+      error => {
+        console.error('Error al eliminar el pago de materia:', error);
+      }
+    );
+  }
+
+  cancelarModificacion() {
+    this.pagoMateriaSeleccionado = null;
+  }
+
   limpiarCampos() {
     this.idCajera = null;
     this.idUsuario = null;
