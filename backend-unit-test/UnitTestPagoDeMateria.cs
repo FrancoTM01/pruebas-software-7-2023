@@ -27,7 +27,7 @@ namespace backend_unit_test
         public void PagoDeMateria_GetById_VerificarItem()
         {
             // Cambiar el valor del ID a uno que existe en la base de datos
-            int idExistente = 15;
+            int idExistente = 20;
 
             var result = PagoDeMateriaServicios.ObtenerPorId<PagoDeMateria>(idExistente);
 
@@ -41,7 +41,7 @@ namespace backend_unit_test
             PagoDeMateria pagoTemp = new()
             {
                 IdCajera = 1,
-                IdUsuario = 1,
+                IdUsuario = 32,
                 FechaPago = DateTime.Now,
                 Monto = 100.0M,
                 Materia = "Materia Test"
@@ -72,7 +72,7 @@ namespace backend_unit_test
         [Fact]
         public void PagoDeMateria_Eliminar_EliminacionExitosa()
         {
-            int idPagoAEliminar = 19; // Reemplaza con el ID correcto a eliminar
+            int idPagoAEliminar = 22; // Reemplaza con el ID correcto a eliminar
 
             int result = PagoDeMateriaServicios.DeletePagoDeMateria(idPagoAEliminar);
 
